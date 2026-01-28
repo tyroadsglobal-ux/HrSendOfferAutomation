@@ -171,17 +171,10 @@ public class AuthController {
     	}
 
 
-<<<<<<< HEAD
         if ("ACCEPTED".equalsIgnoreCase(action)) {
             offer.setCandidateResponse("ACCEPTED");
         } else if ("REJECTED".equalsIgnoreCase(action)) {
             offer.setCandidateResponse("REJECTED");
-=======
-        if ("accept".equalsIgnoreCase(action)) {
-            offer.setcandidateResponse("ACCEPTED");
-        } else if ("reject".equalsIgnoreCase(action)) {
-            offer.setcandidateResponse("REJECTED");
->>>>>>> f6fe0b86953d1b64fa11af10302c088d7004c948
         }
 
         offerService.saveOrUpdateOffer(offer);
